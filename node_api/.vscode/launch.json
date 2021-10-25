@@ -7,7 +7,7 @@
     {
       "name": "Debug",
       "request": "launch",
-      "runtimeArgs": [ "dev" ],
+      "runtimeArgs": [ "debug" ],
       "runtimeExecutable": "yarn",
       "skipFiles": [
         "<node_internals>/**"
