@@ -6,7 +6,7 @@ class UserController {
     const service = new UserService();
 
     try {
-      let { id } = request.params;
+      let { user_id: id } = request;
       if(!id) return response.status(422).json({ message: "User ID invalido" })
 
       let result = await service.getById(id);

@@ -18,7 +18,7 @@ class AuthenticateUserService {
       }
     });
 
-    const response = await axios.get<IGithubUser>("htps://api.github.com/user", {
+    const response = await axios.get<IGithubUser>("https://api.github.com/user", {
       headers: {
         "Authorization": `Bearer ${data.access_token}`
       }

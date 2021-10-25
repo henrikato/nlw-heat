@@ -6,6 +6,7 @@ import prismaClient from "../prisma"
 class MessageService {
   async get () {
     let result = await prismaClient.message.findMany({
+      take: 3,
       orderBy: {
         created_at: "desc"
       },
@@ -30,10 +31,11 @@ class MessageService {
 
   broadcast (message: Message & { user: User }) {
     let socketPayload = {
+      id: message.id,
       text: message.text,
-      user_id: message.user.id,
       created_at: message.created_at,
       user: {
+        id: message.user.id,
         name: message.user.name,
         avatar_url: message.user.avatar_url
       }
