@@ -1,4 +1,4 @@
-# Aplicativo DoWhile2021
+# Projeto DoWhile2021
 
 ### Este repositório contem código desenvolvido durante o NLW/Heat de 2021, na trilha _Impulse_
 O projeto desenvolvido é composto de API, Página Web e Aplicativo Mobile para que pessoas possam compartilhar as suas expectativas sobre o evento DoWhile2021.
